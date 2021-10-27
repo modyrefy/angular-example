@@ -1,0 +1,17 @@
+<br/>
+<p>test works!</p>
+<br/>
+<p>welcome {{name}}</p>
+<h2>{{greetUser("my new user")}}</h2>
+<input [id]="myId" type="text" value="test">
+<input [disabled]="isDisabled"  id="{{myId1}}" type="text" [value]="myId1">
+<br/>
+<button (click)="onClick()">Greet</button>
+<br/>
+<input #testInputId id="testInputId" type="text"/>
+<button (click)="logMessage(testInputId.value)">Log</button>
+<br>
+<h2>two way binding</h2>
+<input [(ngModel)]="name" type="text" >
+{{name}}
+<br/>
