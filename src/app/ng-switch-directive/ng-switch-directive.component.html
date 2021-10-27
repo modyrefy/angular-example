@@ -1,0 +1,29 @@
+<p>ng-switch-directive works!</p>
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">redBlock</div>
+  <div *ngSwitchCase="'blue'">blueBlock</div>
+  <div *ngSwitchCase="'green'">greenBlock</div>
+  <div *ngSwitchDefault>defaultBlock</div>
+</div>
+
+
+<ng-template #redBlock>
+  <h2>
+    Red Color
+  </h2>
+</ng-template>
+<ng-template #blueBlock>
+  <h2>
+    Blue Color
+  </h2>
+</ng-template>
+<ng-template #greenBlock>
+  <h2>
+    green Color
+  </h2>
+</ng-template>
+<ng-template #defaultBlock>
+  <h2>
+    no color picked
+  </h2>
+</ng-template>
